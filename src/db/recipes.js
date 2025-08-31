@@ -1,10 +1,9 @@
 export const recipes = [
   {
-    id: 1,
+    id: 0,
     createdBy: "Nick V.",
     name: "Lentil Soup",
-    category: "soup",
-    type: "Pressure Cooker",
+    tags: ["soup", "pressure cooker"],
     serving: 4,
     description:
       "This lentil soup has been giving me the best poops of my life! There's literally no reason not to suggest this to people that have gut problems It's delicious and by golly will it clean you out!",
@@ -31,11 +30,10 @@ export const recipes = [
     ],
   },
   {
-    id: 2,
+    id: 1,
     createdBy: "Nick V.",
     name: "Orange Juice",
-    category: "soup",
-    type: "Pressure Cooker",
+    tags: ["soup", "pressure cooker"],
     serving: 4,
     description:
       "This lentil soup has been giving me the best poops of my life! There's literally no reason not to suggest this to people that have gut problems It's delicious and by golly will it clean you out!",

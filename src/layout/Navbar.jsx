@@ -3,7 +3,6 @@ export default function Navbar() {
     <>
       <header>
         <nav>
-          <p>Recipes</p>
           <input type="search" placeholder="🔍"></input>
           <p>+</p>
         </nav>

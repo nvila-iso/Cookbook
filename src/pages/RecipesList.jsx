@@ -4,9 +4,11 @@ import { recipes } from "../db/recipes.js";
 export default function RecipesList() {
   return (
     <main>
-      {recipes.map((recipe) => {
-        return <RecipeListItem recipe={recipe} />;
-      })}
+      <div className="recipes-list">
+        {recipes.map((recipe) => {
+          return <RecipeListItem key={recipe.id} recipe={recipe} />;
+        })}
+      </div>
     </main>
   );
 }
