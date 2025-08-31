@@ -1,13 +1,17 @@
 # Simple Cookbook for Home
 
-<p>Need to work on the follow</p>
-1. convert to psql database
-1. clean css
-1. enable search function
-1. upload new recipe w/ image upload
-1. cooking / prep time
-1. dark mode
+Need to work on the following:
+
+1. Convert to psql database  
+2. Clean CSS  
+3. Enable search function  
+4. Upload new recipe w/ image upload  
+5. Cooking / prep time  
+6. Dark mode  
+
 ---
-<p>fun features</p>
-1. share as text message
-1. switch to plain text html
+
+Fun features:
+
+1. Share as text message  
+2. Switch to plain text HTML  
