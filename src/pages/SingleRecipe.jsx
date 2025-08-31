@@ -1,46 +1,57 @@
-import { useParams } from "react-router";
+import { useParams, Link } from "react-router";
+import { useState } from "react";
 import { recipes } from "../db/recipes";
 
 export default function SingleRecipe() {
+  // const [recipe, setRecipe] = useState({});
   const { id } = useParams();
+  let recipe = recipes[id];
 
   return (
     <>
-      <div className="large-card">
-        <div className="img-container">
-          <img src="src/assets/lentil_soup.jpg" alt="" />
-        </div>
-        <div className="instructions">
-          <h2>{recipes[id].name}</h2>
-          <p className="user-upload">uploaded by: {recipes[id].createdBy}</p>
-          <div className="tags-container">
-            <div className="recipe-details">
-              {recipes[id].tags.map((item) => (
-                <p className="tag-item">{item}</p>
-              ))}
-            </div>
+      <main>
+        <Link to={-1} viewTransition className="back-button">
+          go back
+        </Link>
+        <div className="large-card">
+          <div className="img-container">
+            <img src="src/assets/lentil_soup.jpg" alt="" />
           </div>
-          <div className="description">{recipes[id].description}</div>
+          <div className="instructions">
+            <h2>{recipe.name}</h2>
+            <p className="user-upload">uploaded by: {recipe.createdBy}</p>
+            <div className="tags-container">
+              <div className="servings">Serving Size: {recipe.servings}</div>
+              <div className="recipe-details">
+                {recipe.tags.map((item, index) => (
+                  <p className="tag-item" key={item + index}>
+                    {item}
+                  </p>
+                ))}
+              </div>
+            </div>
+            <div className="description">{recipe.description}</div>
+          </div>
         </div>
-      </div>
-      <div className="ingredients-card">
-        <p>ingredients</p>
-        <div className="ingredients">
-          <ul>
-            {recipes[id].ingredients.map((item) => (
-              <li>{item}</li>
+        <div className="ingredients-card">
+          <p>ingredients</p>
+          <div className="ingredients">
+            <ul>
+              {recipe.ingredients.map((item, index) => (
+                <li key={item + index}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="instructions-card">
+          <p>instructions</p>
+          <ol>
+            {recipe.instructions.map((item, index) => (
+              <li key={item + index}>{item}</li>
             ))}
-          </ul>
+          </ol>
         </div>
-      </div>
-      <div className="instructions-card">
-        <p>instructions</p>
-        <ol>
-          {recipes[id].instructions.map((item) => (
-            <li>{item}</li>
-          ))}
-        </ol>
-      </div>
+      </main>
     </>
   );
 }

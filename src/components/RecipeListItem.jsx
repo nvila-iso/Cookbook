@@ -9,13 +9,15 @@ export default function RecipeListItem({ recipe }) {
         </div>
         <h2>{recipe.name.toLowerCase()}</h2>
         <div className="details-container">
-          <p>serving size: {recipe.serving}</p>
+          <p>serves: {recipe.servings}</p>
           <div className="recipe-details">
             {recipe.tags.map((item) => (
               <p className="tag-item">{item}</p>
             ))}
           </div>
-          <Link to={`/${recipe.id}`}>recipe</Link>
+          <Link to={`/${recipe.id}`} viewTransition>
+            recipe
+          </Link>
         </div>
       </div>
     </>

@@ -4,7 +4,7 @@ export const recipes = [
     createdBy: "Nick V.",
     name: "Lentil Soup",
     tags: ["soup", "pressure cooker"],
-    serving: 4,
+    servings: 4,
     description:
       "This lentil soup has been giving me the best poops of my life! There's literally no reason not to suggest this to people that have gut problems It's delicious and by golly will it clean you out!",
     ingredients: [
@@ -19,7 +19,7 @@ export const recipes = [
       "salt & pepper to your liking",
       "4 cups chicken or vegetable broth",
       "4 cups baby spinach",
-      "Freshly grated Parmesan, for serving",
+      "Freshly grated Parmesan, for servings",
     ],
     instructions: [
       "Put the  spinach aside, this will go in afterwards. Dump all ingredients into pressure cooker.",
@@ -34,7 +34,7 @@ export const recipes = [
     createdBy: "Nick V.",
     name: "Orange Juice",
     tags: ["soup", "pressure cooker"],
-    serving: 4,
+    servings: 4,
     description:
       "This lentil soup has been giving me the best poops of my life! There's literally no reason not to suggest this to people that have gut problems It's delicious and by golly will it clean you out!",
     ingredients: [
@@ -49,7 +49,37 @@ export const recipes = [
       "salt & pepper to your liking",
       "4 cups chicken or vegetable broth",
       "4 cups baby spinach",
-      "Freshly grated Parmesan, for serving",
+      "Freshly grated Parmesan, for servings",
+    ],
+    instructions: [
+      "Put the  spinach aside, this will go in afterwards. Dump all ingredients into pressure cooker.",
+      "Set the pressure cooker to manual, high for 18 minutes.",
+      "When the timer is up, immediately release the pressure using the valve.",
+      "Add the spinach in and stir for a minute or until wilted.",
+      "Sprinkle on som parmesan and enjoy!",
+    ],
+  },
+  {
+    id: 2,
+    createdBy: "Nick V.",
+    name: "Orange Juice",
+    tags: ["soup", "pressure cooker"],
+    servings: 4,
+    description:
+      "This lentil soup has been giving me the best poops of my life! There's literally no reason not to suggest this to people that have gut problems It's delicious and by golly will it clean you out!",
+    ingredients: [
+      "1 large onion, chopped",
+      "1 medium carrot, peeled and chopped",
+      "2 stalks celery, chopped",
+      "3 cloves garlic, minced",
+      "1 1/2 cups green lentils",
+      "1 (14.5 oz) can diced tomatoes",
+      "2 tsp. fresh thyme",
+      "1 tsp. italian seasoning",
+      "salt & pepper to your liking",
+      "4 cups chicken or vegetable broth",
+      "4 cups baby spinach",
+      "Freshly grated Parmesan, for servings",
     ],
     instructions: [
       "Put the  spinach aside, this will go in afterwards. Dump all ingredients into pressure cooker.",
